@@ -4,34 +4,34 @@ using namespace std;
 
 int main()
 {
-   char process = 'y';
+   char reapeat_calculation = 'y';
 
-    while(process == 'y' || process == 'Y'){
+    while(reapeat_calculation == 'y' || reapeat_calculation == 'Y'){
 
-    double num1, num2, num3, result;
+    double length, width, embankment, result;
 
     cout << "enter the length: " << endl;
-    cin >> num1;
+    cin >> length;
     cout << "enter the width: " << endl;
-    cin >> num2;
+    cin >> width;
     cout << "enter the embankment: " << endl;
-    cin >> num3;
+    cin >> embankment;
 
     double firstcal, secondcal, newnum1, newnum2, newnum3;
 
-    newnum3 = num3 * 2;
+    newnum3 = embankment * 2;
 
-    newnum1 = num1 - newnum3;
-    newnum2 = num2 - newnum3;
+    newnum1 = length - newnum3;
+    newnum2 = width - newnum3;
 
-    firstcal = num1 * num2;
+    firstcal = length * width;
     secondcal = newnum1 * newnum2;
 
     result = firstcal - secondcal;
 
     cout << "your area is: " << result << endl;
     cout << "calculate again y/n " << endl;
-    cin >> process;
+    cin >> reapeat_calculation;
 
     }
     return 0;
