@@ -4,8 +4,7 @@ using namespace std;
 
 int main()
 {
-    const double air_weight_multiplier = 0.00129;
-    const double cubic_meter = 1000.0;
+    const double gold_weight_multiplier = 19.3;
     char repeat_calculation = 'y';
 
     while (repeat_calculation == 'y' || repeat_calculation == 'Y'){
@@ -18,9 +17,9 @@ int main()
         cin >> width;
 
         volume = height * length * width;
-        weight = (volume * air_weight_multiplier) * cubic_meter;
+        weight = volume * gold_weight_multiplier;
 
-        cout << "air in that room is : " << weight << endl;
+        cout << "weight is : " << weight << endl;
         cout << "calculate again y/n" << endl;
         cin >> repeat_calculation;
     }
